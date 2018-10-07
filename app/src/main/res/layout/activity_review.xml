@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+
+        >
+
+        <TextView
+            android:id="@+id/txContent2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/btLike"
+            android:background="#ffff"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/txLike"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/btBad"
+            android:background="#ffff"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/txBad"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btAdd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글입력" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list3">
+
+    </ListView>
+
+</LinearLayout>

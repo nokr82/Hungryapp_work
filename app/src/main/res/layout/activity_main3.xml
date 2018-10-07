@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main3Activity">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="등록 정보 수정"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btModi"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="메뉴관리"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btMenu"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#111"
+            android:text="최근에 등록된 리뷰"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFC7D1"
+            android:id="@+id/listReview"
+            android:layout_margin="10dp">
+
+        </ListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
